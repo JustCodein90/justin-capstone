@@ -1,14 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './Componets/Forms/Button';
+import { HomeNav } from './Componets/Layout/Navbar/HomeNav';
 
 function App() {
   return (
+    
     <div className="App">
+      <HomeNav />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button />
         <a
           className="App-link"
           href="https://reactjs.org"
