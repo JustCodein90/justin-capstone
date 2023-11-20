@@ -1,0 +1,59 @@
+// create an Edit button by using a function and state
+
+import React, { useState } from 'react';
+
+function EditableForm() {
+ const [isEditing, setIsEditing] = useState(false);
+
+ // Other state variables and functions go here ******************
+
+ return (
+    // Form JSX goes here
+ );
+}
+
+
+// Then, create a function to toggle editing:
+
+
+function toggleEditing() {
+    setIsEditing(!isEditing);
+   }
+
+
+// Add the Edit button to your form:
+
+   return (
+    <form>
+       {/* Other form fields go here */}
+       <button type="button" onClick={toggleEditing}>
+         {isEditing ? 'Save' : 'Edit'}
+       </button>
+    </form>
+   );
+
+  /*****Finally, wrap your form fields with conditional rendering based on the
+    isEditing state: */
+
+
+   return (
+    <form>
+       {isEditing ? (
+         <>
+           {/* Editable form fields go here */}
+         </>
+       ) : (
+         <>
+           {/* Non-editable form fields go here */}
+         </>
+       )}
+       <button type="button" onClick={toggleEditing}>
+         {isEditing ? 'Save' : 'Edit'}
+       </button>
+    </form>
+   );
+
+  /*  In this example, when the Edit button is clicked, the form fields will 
+   become editable, and the button text will change to 'Save'. You can also
+    add the functionality to save the changes when the Save button is 
+    clicked. */
