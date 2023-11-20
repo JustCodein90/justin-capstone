@@ -3,7 +3,7 @@ import React from 'react';
 
 import { HomeNav } from '../../Layout/Navbar/HomeNav';
 
-const Homepage = () => {
+const Home = () => {
     return (
         <div className="Homepage">
           <HomeNav />
@@ -21,4 +21,4 @@ const Homepage = () => {
     );
 };
 
-export default Homepage;
+export default Home;
